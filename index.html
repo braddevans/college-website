@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<title>Homepage</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/bootstrap.css"> 
+    <link rel="stylesheet" href="css/style.css">
+<style>
+@media screen and (max-width: 455px) {
+    .h3 {
+        font-size:16px;
+    }
+}
+</style>
+<body id="myPage">
+
+<!-- Navbar -->
+<div class="w3-sidebar w3-light-grey w3-card-4 w3-animate-left" style="width:200px" id="mySidebar">
+  <div class="w3-bar w3-dark-grey">
+  <span class="w3-bar-item w3-padding-16">Menu:</span>
+  <button onclick="w3_close()" class="w3-bar-item w3-button w3-right w3-padding-16" title="close Sidebar">×</button>
+  </div>
+  
+  <img src="logo.gif" alt="nightfall Icon" style="width:200px;height:200px;">
+
+  <div class="w3-bar-block">
+  <a class="w3-bar-item w3-button w3-purple" href="index.html">Home</a>
+  <a class="w3-bar-item w3-button" href="about.html">About</a>
+  <a class="w3-bar-item w3-button" href="https://server.pro/control-panel/6211867/console/">nothing</a>
+  <div class="w3-dropdown-hover">
+    <a class="w3-button" href="javascript:void(0)">Dropdown <i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+      <a class="w3-bar-item w3-button" href="staff.html">nothing</a>
+      <a class="w3-bar-item w3-button" href="commands.html">nothing</a>
+      <a class="w3-bar-item w3-button" href="ip.html">nothing</a>
+    </div>
+  </div>
+  <a class="w3-bar-item w3-button" href="support.html">nothing</a>
+  </div>
+</div>
+
+<div id="main" style="margin-left:200px">
+
+<div class="w3-container w3-display-container">
+  <span title="open Sidebar" style="display:none" id="openNav" class="w3-button w3-transparent w3-display-topleft w3-xlarge" onclick="w3_open()">☰</span>
+</div>
+
+</div>
+
+<!-- Team Container -->
+<div class="w3-container w3-padding-64 w3-center" id="team">
+<h2>stuff</h2>
+<p>peeps:</p>
+
+<div class="w3-row"><br>
+
+<div class="w3-quarter">
+  <img src="logo.gif" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Bread</h3>
+  <p>^</p>
+</div>
+
+<div class="w3-quarter">
+  <img src="logo.gif" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>untitled</h3>
+  <p>untitled</p>
+</div>
+
+<div class="w3-quarter">
+  <img src="logo.gif" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>untitled</h3>
+  <p>untitled</p>
+</div>
+
+<div class="w3-quarter">
+  <img src="logo.gif" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>untitled</h3>
+  <p>not bread</p>
+</div>
+
+</div>
+
+<!-- Work Row -->
+<div class="w3-row-padding w3-padding-64 w3-theme-l1" id="work">
+
+<div class="w3-quarter">
+<h2>Info:</h2>
+<p>hue candid lel.</p>
+</div>
+
+
+
+<div class="w3-quarter">
+<div class="w3-card-2 w3-white">
+  <img src="logo.gif" alt="Cinque Terre" style="width:100%">
+  <div class="w3-container">
+  <h3>who made this website?</p>
+  <h4>bread</h4>
+  <p>kek</p>
+  <p>bread was here</p>
+  <p>megalul</p>
+  <p>code</p>
+  </div>
+  </div>
+</div>
+</div>
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+// Script for side navigation
+function w3_open() {
+    var x = document.getElementById("mySidebar");
+    x.style.width = "300px";
+    x.style.paddingTop = "10%";
+    x.style.display = "block";
+}
+
+// Close side navigation
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+<script>
+function w3_open() {
+  document.getElementById("main").style.marginLeft = "180px";
+  document.getElementById("mySidebar").style.width = "180px";
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("openNav").style.display = 'none';
+}
+function w3_close() {
+  document.getElementById("main").style.marginLeft = "0";
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("openNav").style.display = "inline-block";
+}
+</script>
+<input type="image" class="w3-teal icon-chevron-up" href="" id="return-to-top" src="images/up-chevron-button.png" alt="to the top" width="50" height="50" style="display: inline-block;">
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/jquery-1.11.3.min.js"></script> 
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
